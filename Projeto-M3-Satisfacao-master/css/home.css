@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+label {
+    margin: 0;
+    padding: 0;    
+}
+
+main {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    float: left;
+    width: 100%;
+    padding-top: 4em;
+}			
+
+h5{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.btn-large{
+	padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    width:180px;
+}
+
+p{
+    text-align: center;
+}
+
+#center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#fields {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+@keyframes changeBgColor {
+    from {
+        background: hsl(33, 100%, 73%);
+        border: 1px solid orange;
+        box-shadow: 1px 1px 5px #1a1a1a;
+    }
+    to { 
+        background: hsl(33, 100%, 73%);
+        border: 1px solid orange;
+        box-shadow: 1px 1px 5px #706767;
+    }
+}		
+
+.field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 32%;
+    min-height: 50px;
+    box-sizing: border-box;
+    padding: 55px 35px;
+    margin-bottom: 15px;
+    border: 1px solid #2196F3;
+    border-radius: 6px;
+    background-color: #bcdbf3;
+    cursor: pointer;
+}
+
+.static {
+    background-color: #bcdbf3;
+}
+
+.selected {
+    background-color: hsl(33, 100%, 65%);
+    border: 1px solid orange;
+    box-shadow: 1px 1px 3px #686666;
+}
+
+.cursor-waiting {
+    cursor: not-allowed;
+}
+
+.input-field {
+	float: left;
+    margin: auto 0;
+}
+
+.card-text {
+    float: right;
+    font-size: 26pt;
+}
+
+.card-animation {
+	animation-name: changeBgColor;
+	animation-duration: 900ms;
+	animation-timing-function: ease;
+	animation-delay: 10ms;
+	animation-direction: alternate;
+	animation-play-state: running;				
+}
+
+.field label {
+	float: right;
+	margin-right: 10px;
+	font-size: 18pt;
+}
+
+input#other {
+	width: 50%;
+	height: 60px;
+}
+
+form#clock {
+	display: none;
+}
+
+form > div {
+    margin-bottom: 0.7em;
+}
+
+#enable-comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+input[type=checkbox], input[type=radio] {
+    float: left;
+    margin: auto 0;   
+    box-sizing: border-box;
+    padding: 0;
+    width: 20px;
+    height: 22px;
+}
+
+input#comment {
+    height: 45px;
+}

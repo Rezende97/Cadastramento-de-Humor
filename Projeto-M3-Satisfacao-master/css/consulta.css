@@ -1,0 +1,66 @@
+section#humor-list {
+    box-shadow: 1px 1px 9px #33333357;
+    border-radius: 4px;
+    padding: 15px;
+    border: 1px solid #69b3c3cf;
+}
+
+section#humor-list > div {
+    margin-bottom: 1em;
+    overflow-x: hidden;    
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+section#humor-list > div::-webkit-scrollbar {
+    width: 15px;
+}
+
+section#humor-list > div::-webkit-scrollbar-track {
+    background-color: #237c86;
+}
+
+section#humor-list > div::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 20px;
+  border: none;
+  height: 25px;
+}
+
+h1#page-title {
+    text-align: left;
+    font-size: 22pt;
+}
+
+main {
+    position: relative;
+    width: 85%;
+    float: right;
+    padding: 2em;
+}
+
+table,
+th,
+td {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgba(150, 212, 212, 0.4);
+    font-size: 15pt;
+    padding: 15px;
+}
+
+td {
+    padding: 25px 5px;
+    font-size: 16pt;
+}
+
+tr {
+    height: 70px;    
+}
+
+#button a {
+    margin-right: 5px;
+}  

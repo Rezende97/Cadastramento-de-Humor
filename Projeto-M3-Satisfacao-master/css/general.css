@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+i {
+    font-weight: 900;
+    font-size: 22pt;
+    color: #e3ae27; 
+}
+
+header {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    height: 75px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px #24212157;
+}
+
+header #brand {
+    float: left;
+    width: 30px;
+    position: relative;
+    left: 14%;
+}
+
+header #brand img {
+	width: 100%;
+}
+
+
+header #painel {
+	position: relative;
+	float: right;
+	right: 14%;
+}
+
+header #painel span {
+	background-color: #f44336e0;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+span.email {
+    font-size: 12pt;
+    padding: 5px!important;
+    border-radius: 2px!important;
+    background-color: #0080ffad!important;
+    color: #ffffff;
+}
+
+header #painel span a {
+	color: #fff;
+}

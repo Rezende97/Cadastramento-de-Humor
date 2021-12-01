@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Termos de uso</title>
+    <link rel="stylesheet" href="">
+</head>
+<style type="text/css">
+    body {
+        text-align: center;
+    }
+
+    .termos {
+        border: 1px solid black;
+        width: 50%;
+        margin: 0 auto;
+        height: auto;
+        background-color: gainsboro;
+    }
+</style>
+
+<body>
+    <h1>Termos de uso</h1>
+    <div class="termos">
+        <p>
+            modificação.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id ad fuga explicabo molestias eligendi
+            excepturi officiis exercitationem earum dolore fugit voluptatibus esse rem suscipit porro, maiores tempore
+            asperiores tenetur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse reprehenderit iure tenetur voluptate
+            excepturi repellat perspiciatis, ipsum quaerat expedita, facere quos aut architecto labore id dolorem iste.
+            Rem, earum?
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea tempore commodi, earum quas facere labore iusto
+            iste. Error voluptates cum explicabo esse saepe magni possimus vel. Ducimus voluptatem aspernatur
+            reprehenderit!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nesciunt, blanditiis dolore enim
+            obcaecati non dignissimos repellendus, corporis corrupti provident quibusdam debitis ipsam iusto nisi labore
+            quia cupiditate quasi recusandae!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium velit maiores possimus? Amet nesciunt
+            quisquam aperiam vitae ab tempora incidunt deserunt saepe aliquam blanditiis aliquid, quibusdam nemo esse,
+            officia voluptatem.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero ab veniam soluta nostrum aperiam molestias
+            tempora? Ad, ab similique corporis reprehenderit sequi delectus minus officia accusamus necessitatibus iusto
+            quisquam itaque!
+        </p>
+    </div>
+    <br>
+    <form action="register.php" method="get">
+        <input id='aceito' type="checkbox" name="aceito" value="aceito" onclick='check(this)'>Aceitar<br><br>
+        <input id='submit' type="submit" value="Continuar" disabled="true">
+    </form>
+    <script>
+        function check(div) {
+            if (div.checked == true) {
+                document.getElementById('submit').disabled = false;
+            }
+            else {
+                document.getElementById('submit').disabled = true;
+            }
+        }
+    </script>
+
+    <p>
+        <button><a style="text-decoration: none;" href="index.html">Voltar</a></button>
+    </p>
+</body>
+
+</html>

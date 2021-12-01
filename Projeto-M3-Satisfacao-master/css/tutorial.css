@@ -1,0 +1,171 @@
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+body,
+html {
+	background-color: #f1f1f1;
+}
+
+textarea {
+	resize: none;
+	width: 100%;
+	height: 120px;
+}
+
+main {
+	float: left;
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 1em 1em 0;
+}
+
+#center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}		
+
+section#tutorial {
+	width: 100%;
+	min-height: 250px;
+}
+
+section#tutorial h2 {
+	color: #444;
+}
+
+section#help {
+	padding: 18px;
+}
+
+span {
+	font-weight: bold;
+	color: #6b6c6c;
+}
+
+section#help>div>form {
+    width: 73%;
+}
+
+form>div {
+	width: 100%;
+	margin-top: 15px;
+}
+
+form>div>textarea {
+    width: 100%;
+    height: 220px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+}
+
+.box-tutorial>div {
+	margin-top: 10px;
+}
+
+.dialog {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px;
+	text-align: left;
+	line-height: 2em;
+	font-size: 13pt;
+	border: 2px solid #64e778ad;
+	background-color: #adffad;
+	color: #161515;
+}
+
+.dialog .dialog-title {}
+
+.dialog .dialog-body {}
+
+.dialog-body .dialog-text {}
+
+.dialog .dialog-footer {}
+
+.dialog .dialog-footer .buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+}
+
+.dialog-footer .buttons>div {
+	margin-right: 15px;
+}
+
+button.btn-next {
+	padding: 5px;
+	background-color: #ffffff;
+	border: 2px solid #3333334a;
+}
+
+.step {
+    width: 100%;
+    margin-bottom: 4em;
+    padding: 0 2.5em;
+}
+
+section#tutorial:last-child .step {
+	margin-bottom: 2em;	
+}
+
+.titulo-destaque {
+	text-transform: uppercase;
+	color: #0c5460;
+}
+
+.step p {
+	background-color: aliceblue;
+}
+
+img {
+	width: 100%;
+}
+
+span.title {
+    font-size: 30pt;
+    padding-left: 1em;
+}
+
+img.icon {
+	width: 44px;
+}
+
+.help-form {
+	margin: 0 auto;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#btn_seguir {
+    float: left;
+    width: 74.5%;
+    margin-left: 5%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ff9800;
+    border-color: #996c2a;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #e18908;
+    border-color: #8d6b3a;	
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    background-color: #5d82a4;
+}
