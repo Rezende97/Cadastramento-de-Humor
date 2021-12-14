@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+    rel="stylesheet"
+    />
+
+    <title>Radar da Felicidade</title>
+</head>
+
+<body>
+    <div id="bg-balls">
+    <div class="ball top"></div>
+    <div class="ball bottom"></div>
+    </div>
+
+    <div id="containerPrincipal">
+        <div class="container">
+        <div class="form-container">
+        <div id="bg">
+            <img src="imagem/bg.png" />
+        </div>
+        <div id="containerPrincipal">
+            <div id="acessoUsuario">
+            <div class="title-container">
+                <h1>Radar<br>
+                    da<br>
+                Felicidade</h1>
+            </div>
+    
+            <div class="intro-container">
+                <!-- <h2>
+                    A senha deve conter números, letras e ou um caractere especial
+                </h2> -->
+            </div>
+            <br />
+    
+            <form action="auth/process_register.php" method="post">
+                <label for="email"></label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="e-mail"/>
+                <br />
+
+                <label for="senha"></label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="senha" />
+                <br />
+
+                <label for="confirmação de senha"></label>
+                <input type="password" name="repassword" id="repassword" class="form-control" placeholder="confirmação de senha"
+                />
+                <br />
+
+                <input type="submit" value="Registro" id="botao" class="button" onclick="valida()"/>
+            </form>
+            </div>
+        </div>
+        <script>
+
+            const limitacao = document.getElementById ('#password');
+
+            limitacao.addEventListener("keypress", function (e){
+                checkChar(e);
+            })
+
+            function checkChar (e) {
+                const char = String.fromCharCode(e.keycode);
+
+                const pattern = '[a-zA-Z0-9]';
+
+                if(char.match(pattern)) {
+                    return true;
+                }
+            }
+
+            // -----------------------------------
+
+
+            function valida() {
+                
+                let email = document.getElementById('email');
+                let password = document.getElementById('password');
+                let repassword = document.getElementById('repassword');
+
+                if (email.value.length == ''){
+                    alert ('Digite o seu melhor E-mail');
+                    console.log ('passou email');
+                }else if (password.value.length == ''){
+                    alert ('Digite a sua melhor senha');
+                }else if (repassword.value.length == ''){
+                    alert ('obrigatório confirmar a senha');
+                } else (
+                   false
+                )
+
+                if (password == repassword) {
+                    
+                    return true
+
+                } else {
+                    
+                    alert ('Senha e Confirmar senha, obrigatório serem iguais!')
+                }
+            }
+        </script>
+    
+        </div>
+</body>
+</html>
